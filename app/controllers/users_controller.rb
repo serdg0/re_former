@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
   def new
-    @user = User.new(name:"", email: "",password:"")
+    @user = User.new(name: '', email: '', password: '')
   end
 
   def create
@@ -19,11 +21,12 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(users_params)
-      flash[:success] = "Profile Updated Successfully!"
+      flash[:success] = 'Profile Updated Successfully!'
     else
       render 'edit'
     end
   end
+
   private
 
   def users_params
