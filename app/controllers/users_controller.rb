@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def new
-
+    @user = User.new(name:"", email: "",password:"")
   end
 
   def create
