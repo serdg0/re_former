@@ -1,7 +1,1 @@
-<%= form_for @user do  |f| %>
-  <%= render 'shared/error_messages' %>
-  Username <%=f.text_field :name  ,placeholder: "Here your name"%>
-  Email <%=f.email_field :email,placeholder:"Your Email" %>
-  Password <%=f.password_field :password, placeholder:"Here your Password" %>
-  <%= f.submit %>
-<% end %>
+<%= render 'shared/edit_new_partial' %>
