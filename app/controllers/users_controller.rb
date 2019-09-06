@@ -2,7 +2,7 @@
 
 class UsersController < ApplicationController
   def new
-    @user = User.new(name: '', email: '', password: '')
+    @user = User.new
   end
 
   def create
