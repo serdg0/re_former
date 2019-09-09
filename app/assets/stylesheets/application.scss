@@ -1,0 +1,13 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.feature-error{
+  background-color: #DADADA;
+  border: 5px solid red;
+}
+
+ul{
+  li{
+    border: 3px solid darkred;
+  }
+}
